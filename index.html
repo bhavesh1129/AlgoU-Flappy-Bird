@@ -4,19 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flappy bird game</title>
+    <title>Flappy Bird Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- <h1 class="heading">Flappy Bird</h1> -->
+    <!-- Main game container that holds the bird and obstacles -->
     <div id="game-container">
+        <!-- The bird element that the player controls -->
         <div id="bird"></div>
 
+        <!-- Pipe obstacles - positioned using CSS -->
         <div class="pipe" style="height: 200px; top: 0; left: 200px"></div>
         <div class="pipe" style="height: 300px; top: 400px; left: 300px"></div>
     </div>
+
+    <!-- Game controls instruction -->
+    <div id="instructions">
+        <p>Press any key to make the bird jump and avoid the pipes!</p>
+    </div>
+
+    <!-- Load the game logic -->
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 
 </html>
